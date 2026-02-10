@@ -3,8 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "next dev -p 6001",
+    "build": "npm run generate-image-sitemap && next build && npm run copy-htaccess && npm run copy-image-sitemap",
+    "copy-htaccess": "cp public/.htaccess out/.htaccess",
+    "copy-image-sitemap": "cp public/sitemap-images.xml out/sitemap-images.xml",
+    "generate-image-sitemap": "node scripts/generate-image-sitemap.js",
     "start": "next start",
     "lint": "eslint"
   },
