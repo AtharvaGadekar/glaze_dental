@@ -1,0 +1,9 @@
+export { default as Header } from './layout/Header';
+export { default as Footer } from './layout/Footer';
+export { default as Hero } from './sections/Hero';
+export { default as FloatingReviews } from './ui/FloatingReviews';
+export { default as ServicesList } from './sections/ServicesList';
+export { default as TestimonialCarousel } from './sections/TestimonialCarousel';
+export { default as FloatingWhatsApp } from './ui/FloatingWhatsApp';
+export { default as FAQ } from './sections/FAQ';
+export { default as AreaServed } from './sections/AreaServed';
